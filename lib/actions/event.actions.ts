@@ -28,7 +28,7 @@ const populateEvent = (query: any) => {
 };
 
 // CREATE
-export async function createEvent({ userId, event, path }: CreateEventParams) {
+export const createEvent = async ({ userId, event, path }: CreateEventParams) => {
 	try {
 		await connectToDatabase();
 
@@ -46,10 +46,10 @@ export async function createEvent({ userId, event, path }: CreateEventParams) {
 	} catch (error) {
 		handleError(error);
 	}
-}
+};
 
 // GET ONE EVENT BY ID
-export async function getEventById(eventId: string) {
+export const getEventById = async (eventId: string) => {
 	try {
 		await connectToDatabase();
 
@@ -61,10 +61,10 @@ export async function getEventById(eventId: string) {
 	} catch (error) {
 		handleError(error);
 	}
-}
+};
 
 // UPDATE
-export async function updateEvent({ userId, event, path }: UpdateEventParams) {
+export const updateEvent = async ({ userId, event, path }: UpdateEventParams) => {
 	try {
 		await connectToDatabase();
 
@@ -84,10 +84,10 @@ export async function updateEvent({ userId, event, path }: UpdateEventParams) {
 	} catch (error) {
 		handleError(error);
 	}
-}
+};
 
 // DELETE
-export async function deleteEvent({ eventId, path }: DeleteEventParams) {
+export const deleteEvent = async ({ eventId, path }: DeleteEventParams) => {
 	try {
 		await connectToDatabase();
 
@@ -96,10 +96,10 @@ export async function deleteEvent({ eventId, path }: DeleteEventParams) {
 	} catch (error) {
 		handleError(error);
 	}
-}
+};
 
 // GET ALL EVENTS
-export async function getAllEvents({ query, limit = 6, page, category }: GetAllEventsParams) {
+export const getAllEvents = async ({ query, limit = 6, page, category }: GetAllEventsParams) => {
 	try {
 		await connectToDatabase();
 
@@ -125,10 +125,10 @@ export async function getAllEvents({ query, limit = 6, page, category }: GetAllE
 	} catch (error) {
 		handleError(error);
 	}
-}
+};
 
 // GET EVENTS BY ORGANIZER
-export async function getEventsByUser({ userId, limit = 6, page }: GetEventsByUserParams) {
+export const getEventsByUser = async ({ userId, limit = 6, page }: GetEventsByUserParams) => {
 	try {
 		await connectToDatabase();
 
@@ -147,15 +147,15 @@ export async function getEventsByUser({ userId, limit = 6, page }: GetEventsByUs
 	} catch (error) {
 		handleError(error);
 	}
-}
+};
 
 // GET RELATED EVENTS: EVENTS WITH SAME CATEGORY
-export async function getRelatedEventsByCategory({
+export const getRelatedEventsByCategory = async ({
 	categoryId,
 	eventId,
 	limit = 3,
 	page = 1,
-}: GetRelatedEventsByCategoryParams) {
+}: GetRelatedEventsByCategoryParams) => {
 	try {
 		await connectToDatabase();
 
@@ -174,4 +174,4 @@ export async function getRelatedEventsByCategory({
 	} catch (error) {
 		handleError(error);
 	}
-}
+};
