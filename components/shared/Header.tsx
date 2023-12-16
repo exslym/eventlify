@@ -13,7 +13,9 @@ const Header = () => {
 				<Link href='/' className='w-36'>
 					<div className='flex items-center justify-start gap-3'>
 						<Image src='/assets/images/logo.png' alt='logo' width={36} height={36} />
-						<h2 className='text-2xl font-semibold'>Eventlify</h2>
+						<h2 className='text-2xl font-semibold'>
+							<span className='text-4xl font-normal leading-[0.9]'>e</span>ventlify
+						</h2>
 					</div>
 				</Link>
 
