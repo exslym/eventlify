@@ -8,15 +8,19 @@ import NavItems from './NavItems';
 
 const Header = () => {
 	return (
-		<header className='w-full border-b'>
+		<header className='w-full border-b px-0 xl:px-6'>
 			<div className='wrapper flex items-center justify-between'>
 				<Link href='/' className='w-36'>
-					<div className='flex items-center justify-start gap-3'>
+					<div className='flex items-center justify-start gap-[2px]'>
+						<Image src='/assets/images/logo.png' alt='logo' width={36} height={36} />
+						<h2 className='text-2xl font-semibold eventlify-text text-slate-700'>ventlify</h2>
+					</div>
+					{/* <div className='flex items-center justify-start gap-3'>
 						<Image src='/assets/images/logo.png' alt='logo' width={36} height={36} />
 						<h2 className='text-2xl font-semibold'>
 							<span className='text-4xl font-normal leading-[0.9]'>e</span>ventlify
 						</h2>
-					</div>
+					</div> */}
 				</Link>
 
 				<SignedIn>

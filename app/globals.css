@@ -214,7 +214,7 @@ body {
 	}
 
 	.textarea {
-		@apply bg-grey-50 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent !important;
+		@apply bg-grey-50 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent resize-none overflow-y-auto !important;
 	}
 
 	.button {
@@ -273,4 +273,8 @@ body {
 
 .react-datepicker__time-list-item--selected {
 	background-color: #624cf5 !important;
+}
+
+.eventlify-text {
+	letter-spacing: 0.05em;
 }

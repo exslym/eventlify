@@ -16,13 +16,15 @@ const UpdateEvent = async ({ params: { id } }: UpdateEventProps) => {
 
 	return (
 		<>
-			<section className='bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10'>
+			<section className='bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10 px-0 xl:px-6'>
 				<h3 className='wrapper h3-bold text-center sm:text-left'>Update Event</h3>
 			</section>
 
-			<div className='wrapper my-8'>
-				<EventForm type='Update' event={event} eventId={event._id} userId={userId} />
-			</div>
+			<section className=' my-8 px-0 xl:px-6'>
+				<div className='wrapper'>
+					<EventForm type='Update' event={event} eventId={event._id} userId={userId} />
+				</div>
+			</section>
 		</>
 	);
 };

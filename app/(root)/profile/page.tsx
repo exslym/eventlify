@@ -23,7 +23,7 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
 	return (
 		<>
 			{/* My Tickets */}
-			<section className='bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10'>
+			<section className='bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10 px-0 xl:px-6'>
 				<div className='wrapper flex items-center justify-center sm:justify-between'>
 					<h3 className='h3-bold text-center sm:text-left'>My Tickets</h3>
 					<Button asChild size='lg' className='button hidden sm:flex'>
@@ -32,21 +32,23 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
 				</div>
 			</section>
 
-			<section className='wrapper my-8'>
-				<Collection
-					data={orderedEvents}
-					emptyTitle='No event tickets purchased yet'
-					emptyStateSubtext='No worries - plenty of exciting events to explore!'
-					collectionType='My_Tickets'
-					limit={3}
-					page={ordersPage}
-					urlParamName='ordersPage'
-					totalPages={orders?.totalPages}
-				/>
+			<section className='my-8 px-0 xl:px-6'>
+				<div className='wrapper'>
+					<Collection
+						data={orderedEvents}
+						emptyTitle='No event tickets purchased yet'
+						emptyStateSubtext='No worries - plenty of exciting events to explore!'
+						collectionType='My_Tickets'
+						limit={3}
+						page={ordersPage}
+						urlParamName='ordersPage'
+						totalPages={orders?.totalPages}
+					/>
+				</div>
 			</section>
 
 			{/* Events Organized */}
-			<section className='bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10'>
+			<section className='bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10 px-0 xl:px-6'>
 				<div className='wrapper flex items-center justify-center sm:justify-between'>
 					<h3 className='h3-bold text-center sm:text-left'>Events Organized</h3>
 					<Button asChild size='lg' className='button hidden sm:flex'>
@@ -55,17 +57,19 @@ const ProfilePage = async ({ searchParams }: SearchParamProps) => {
 				</div>
 			</section>
 
-			<section className='wrapper my-8'>
-				<Collection
-					data={organizedEvents?.data}
-					emptyTitle='No events have been created yet'
-					emptyStateSubtext='Go create some now'
-					collectionType='Events_Organized'
-					limit={3}
-					page={eventsPage}
-					urlParamName='eventsPage'
-					totalPages={organizedEvents?.totalPages}
-				/>
+			<section className='my-8 px-0 xl:px-6'>
+				<div className='wrapper'>
+					<Collection
+						data={organizedEvents?.data}
+						emptyTitle='No events have been created yet'
+						emptyStateSubtext='Go create some now'
+						collectionType='Events_Organized'
+						limit={3}
+						page={eventsPage}
+						urlParamName='eventsPage'
+						totalPages={organizedEvents?.totalPages}
+					/>
+				</div>
 			</section>
 		</>
 	);
