@@ -1,6 +1,6 @@
 ## [Eventlify](https://eventlify-exs.vercel.app/)
 
-[![preview](https://github.com/exslym/eventlify/blob/main/public/preview.jpg)](https://eventlify-exs.vercel.app/)
+[![preview](https://github.com/exslym/eventlify/blob/main/public/preview1.jpg)](https://eventlify-exs.vercel.app/)
 
   <div>
     <img src="https://img.shields.io/badge/-Next_JS_14-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="Next.js" />
