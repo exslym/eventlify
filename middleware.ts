@@ -12,10 +12,10 @@ export default authMiddleware({
 	debug: true,
 });
 
-// export const config = {
-// 	matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
-// };
-
 export const config = {
-	matcher: ['/(.*?trpc.*?|(?!static|.*\\..*|_next|favicon.ico).*)', '/'],
+	matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
 };
+
+// export const config = {
+// 	matcher: ['/(.*?trpc.*?|(?!static|.*\\..*|_next|favicon.ico).*)', '/'],
+// };
