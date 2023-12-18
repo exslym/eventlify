@@ -28,10 +28,10 @@ export const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
 				<Image src='/assets/icons/delete.svg' alt='edit' width={20} height={20} />
 			</AlertDialogTrigger>
 
-			<AlertDialogContent className='bg-white'>
+			<AlertDialogContent className='bg-white  dark:bg-gray-800 dark:border-gray-600'>
 				<AlertDialogHeader>
 					<AlertDialogTitle>Are you sure you want to delete?</AlertDialogTitle>
-					<AlertDialogDescription className='p-regular-16 text-grey-600'>
+					<AlertDialogDescription className='p-regular-16 text-grey-600 dark:text-white/70'>
 						This will permanently delete this event
 					</AlertDialogDescription>
 				</AlertDialogHeader>
@@ -45,6 +45,7 @@ export const DeleteConfirmation = ({ eventId }: { eventId: string }) => {
 								await deleteEvent({ eventId, path: pathname });
 							})
 						}
+						className='dark:text-white'
 					>
 						{isPending ? 'Deleting...' : 'Delete'}
 					</AlertDialogAction>

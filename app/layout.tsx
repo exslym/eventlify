@@ -1,3 +1,5 @@
+import { ThemeProvider } from '@/ theme-provider';
+// import { ThemeSwitcher } from '@/components/shared/ThemeSwitcher';
 import { ClerkProvider } from '@clerk/nextjs';
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
@@ -19,12 +21,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 	return (
-		<>
+		<html lang='en'>
 			<ClerkProvider>
-				<html lang='en'>
-					<body className={poppins.variable}>{children}</body>
-				</html>
+				<body className={poppins.variable}>
+					<ThemeProvider attribute='class' defaultTheme='light' enableSystem>
+						<main>{children}</main>
+					</ThemeProvider>
+				</body>
 			</ClerkProvider>
-		</>
+		</html>
 	);
 }

@@ -74,6 +74,7 @@
 	color: hsl(169, 87%, 27%);
 	color: #09836d;
 	color: #624cf5;
+	color: #020817;
 }
 
 * {
@@ -216,23 +217,23 @@ body {
 
 	/* SHADCN OVERRIDES */
 	.select-field {
-		@apply w-full bg-grey-50 h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
+		@apply w-full bg-grey-50 dark:bg-gray-700 h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
 	}
 
 	.input-field {
-		@apply bg-grey-50 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
+		@apply bg-grey-50 dark:bg-gray-700 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
 	}
 
 	.input-price-field {
-		@apply bg-grey-50 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 text-primary-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
+		@apply bg-grey-50 dark:bg-gray-700 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 text-primary-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
 	}
 
 	.textarea {
-		@apply bg-grey-50 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent resize-none overflow-y-auto !important;
+		@apply bg-grey-50 dark:bg-gray-700 flex flex-1 placeholder:text-grey-500 p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent resize-none overflow-y-auto !important;
 	}
 
 	.button {
-		@apply rounded-full h-[54px] p-regular-16;
+		@apply rounded-full h-[54px] p-regular-16 dark:text-white;
 	}
 
 	.select-item {
@@ -265,6 +266,7 @@ body {
 .cl-formButtonPrimary:focus,
 .cl-formButtonPrimary:active {
 	background-color: #705cf7;
+	background-color: #09836d;
 }
 
 /* ========================================== REACT-DATEPICKER STYLES */

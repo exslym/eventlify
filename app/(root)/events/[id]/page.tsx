@@ -16,7 +16,7 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
 
 	return (
 		<>
-			<section className='flex justify-center bg-primary-50 bg-dotted-pattern bg-contain px-0 xl:px-6'>
+			<section className='flex justify-center bg-primary-50 dark:bg-inherit bg-dotted-pattern bg-contain px-0 xl:px-6'>
 				<div className='grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl'>
 					<Image
 						src={event.imageUrl}
@@ -32,15 +32,15 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
 
 							<div className='flex flex-col gap-3 sm:flex-row sm:items-center'>
 								<div className='flex gap-3'>
-									<p className='p-bold-20 rounded-full bg-green-500/10 px-5 py-2 text-green-700'>
+									<p className='p-bold-20 rounded-full bg-green-500/10 dark:bg-green-500/20 px-5 py-2 text-green-700'>
 										{event.isFree ? 'FREE' : `€${event.price}`}
 									</p>
-									<p className='p-medium-16 rounded-full bg-grey-500/10 px-4 py-2.5 text-grey-500'>
+									<p className='p-medium-16 rounded-full bg-grey-500/10 dark:bg-gray-600/50 px-4 py-2.5 text-grey-500 dark:text-white/70'>
 										{event.category.name}
 									</p>
 								</div>
 
-								<p className='p-medium-18 ml-2 mt-2 sm:mt-0'>
+								<p className='p-medium-18 ml-2 mt-2 sm:mt-0 dark:text-white/70'>
 									by{' '}
 									<span className='text-primary-500'>
 										{event.organizer.firstName} {event.organizer.lastName}
@@ -73,7 +73,7 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
 						</div>
 
 						<div className='flex flex-col gap-2'>
-							<p className='p-bold-20 text-grey-600'>What You'll Learn:</p>
+							<p className='p-bold-20 text-grey-600 dark:text-gray-400'>What You'll Learn:</p>
 							<p className='p-medium-16 lg:p-regular-18'>{event.description}</p>
 							<p className='p-medium-16 lg:p-regular-18 truncate text-primary-500 underline'>
 								{event.url}

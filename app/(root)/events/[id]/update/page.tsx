@@ -16,7 +16,7 @@ const UpdateEvent = async ({ params: { id } }: UpdateEventProps) => {
 
 	return (
 		<>
-			<section className='bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10 px-0 xl:px-6'>
+			<section className='bg-primary-50  dark:bg-inherit bg-dotted-pattern bg-cover bg-center py-5 md:py-10 px-0 xl:px-6'>
 				<h3 className='wrapper h3-bold text-center sm:text-left'>Update Event</h3>
 			</section>
 

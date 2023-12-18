@@ -5,15 +5,18 @@ import React from 'react';
 import { Button } from '../ui/button';
 import MobileNav from './MobileNav';
 import NavItems from './NavItems';
+import { ThemeSwitcher } from './ThemeSwitcher';
 
 const Header = () => {
 	return (
-		<header className='w-full border-b px-0 xl:px-6'>
-			<div className='wrapper flex items-center justify-between'>
-				<Link href='/' className='w-36'>
+		<header className='w-full border-b dark:border-gray-700 dark:bg-gray-700 px-0 xl:px-6'>
+			<div className='wrapper relative flex items-center justify-between'>
+				<Link href='/'>
 					<div className='flex items-center justify-start gap-[2px]'>
 						<Image src='/assets/images/logo.png' alt='logo' width={36} height={36} />
-						<h2 className='text-2xl font-semibold eventlify-text text-slate-700'>ventlify</h2>
+						<h2 className='text-2xl font-semibold eventlify-text text-slate-700 dark:text-slate-300'>
+							ventlify
+						</h2>
 					</div>
 					{/* <div className='flex items-center justify-start gap-3'>
 						<Image src='/assets/images/logo.png' alt='logo' width={36} height={36} />
@@ -24,12 +27,13 @@ const Header = () => {
 				</Link>
 
 				<SignedIn>
-					<nav className='md:flex-between hidden w-full max-w-xs'>
+					<nav className='md:flex-between hidden w-full max-w-[300px]'>
 						<NavItems />
 					</nav>
 				</SignedIn>
 
 				<div className='flex w-32 justify-end gap-3'>
+					<ThemeSwitcher />
 					<SignedIn>
 						<UserButton afterSignOutUrl='/' />
 						<MobileNav />

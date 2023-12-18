@@ -12,7 +12,7 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
 
 	return (
 		<>
-			<section className=' bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10 px-0 xl:px-6'>
+			<section className=' bg-primary-50 dark:bg-inherit bg-dotted-pattern bg-cover bg-center py-5 md:py-10 px-0 xl:px-6'>
 				<h3 className='wrapper h3-bold text-center sm:text-left '>Orders</h3>
 			</section>
 
@@ -24,9 +24,9 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
 
 			<section className='px-0 xl:px-6'>
 				<div className='wrapper overflow-x-auto'>
-					<table className='w-full border-collapse border-t'>
+					<table className='w-full border-collapse border-t dark:border-gray-600'>
 						<thead>
-							<tr className='p-medium-14 border-b text-grey-500'>
+							<tr className='p-medium-14 border-b dark:border-gray-600 text-grey-500 dark:text-white/70'>
 								<th className='min-w-[250px] py-3 text-left'>Order ID</th>
 								<th className='min-w-[200px] flex-1 py-3 pr-4 text-left'>Event Title</th>
 								<th className='min-w-[150px] py-3 text-left'>Buyer</th>
@@ -36,8 +36,8 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
 						</thead>
 						<tbody>
 							{orders && orders.length === 0 ? (
-								<tr className='border-b'>
-									<td colSpan={5} className='py-4 text-center text-gray-500'>
+								<tr className='border-b dark:border-gray-600'>
+									<td colSpan={5} className='py-4 text-center text-gray-500 dark:text-white'>
 										No orders found.
 									</td>
 								</tr>
@@ -47,7 +47,7 @@ const Orders = async ({ searchParams }: SearchParamProps) => {
 										orders.map((row: IOrderItem) => (
 											<tr
 												key={row._id}
-												className='p-regular-14 lg:p-regular-16 border-b '
+												className='p-regular-14 lg:p-regular-16 border-b dark:border-gray-600'
 												style={{ boxSizing: 'border-box' }}
 											>
 												<td className='min-w-[250px] py-4 text-primary-500'>{row._id}</td>
