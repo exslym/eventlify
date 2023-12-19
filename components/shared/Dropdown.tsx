@@ -59,14 +59,14 @@ const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
 						<SelectItem
 							key={category._id}
 							value={category._id}
-							className='select-item p-regular-14'
+							className='select-item p-regular-14 hover:dark:bg-gray-800'
 						>
 							{category.name}
 						</SelectItem>
 					))}
 
 				<AlertDialog>
-					<AlertDialogTrigger className='p-medium-14 flex w-full rounded-sm py-3 pl-8 text-primary-500 hover:bg-primary-50 focus:text-primary-500'>
+					<AlertDialogTrigger className='p-medium-14 flex w-full rounded-sm py-3 pl-8 text-primary-500 hover:bg-primary-50 focus:text-primary-500 dark:hover:bg-gray-800'>
 						Add new category
 					</AlertDialogTrigger>
 					<AlertDialogContent className='bg-white dark:bg-gray-800 dark:border-gray-600'>
@@ -81,7 +81,7 @@ const Dropdown = ({ value, onChangeHandler }: DropdownProps) => {
 								/>
 							</AlertDialogDescription>
 						</AlertDialogHeader>
-						<AlertDialogFooter>
+						<AlertDialogFooter className='bg-white dark:bg-gray-800 dark:border-gray-600'>
 							<AlertDialogCancel>Cancel</AlertDialogCancel>
 							<AlertDialogAction
 								onClick={() => startTransition(handleAddCategory)}

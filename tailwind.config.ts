@@ -26,7 +26,8 @@ module.exports = withUt({
 				// 	foreground: 'hsl(var(--primary-foreground))',
 				// },
 				primary: {
-					500: '#09836d',
+					// 500: '#09836d',
+					500: '#44ba72',
 					50: ' #F6F8FD',
 					DEFAULT: '#09836d',
 					foreground: 'hsl(var(--primary-foreground))',

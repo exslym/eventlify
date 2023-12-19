@@ -9,7 +9,7 @@ import { ThemeSwitcher } from './ThemeSwitcher';
 
 const Header = () => {
 	return (
-		<header className='w-full border-b dark:border-gray-700 dark:bg-gray-700 px-0 xl:px-6'>
+		<header className='w-full border-b dark:border-gray-700 dark:bg-gray-800 px-0 xl:px-6'>
 			<div className='wrapper relative flex items-center justify-between'>
 				<Link href='/'>
 					<div className='flex items-center justify-start gap-[2px]'>

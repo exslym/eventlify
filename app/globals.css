@@ -13,7 +13,7 @@
 		--popover: 0 0% 100%;
 		--popover-foreground: 222.2 84% 4.9%;
 
-		--primary: 169, 87%, 27%%;
+		--primary: 143, 46%, 50%;
 		--primary-foreground: 210 40% 98%;
 		/* --primary: 222.2 47.4% 11.2%;
 		--primary-foreground: 210 40% 98%; */
@@ -47,7 +47,7 @@
 		--popover: 222.2 84% 4.9%;
 		--popover-foreground: 210 40% 98%;
 
-		--primary: 169, 87%, 27%%;
+		--primary: 143, 46%, 50%;
 		--primary-foreground: 222.2 47.4% 11.2%;
 		/* --primary: 210 40% 98%;
 		--primary-foreground: 222.2 47.4% 11.2%; */
@@ -73,6 +73,8 @@
 .forTestColors {
 	color: hsl(169, 87%, 27%);
 	color: #09836d;
+	color: hsl(143, 46%, 50%);
+	color: #44ba72;
 	color: #624cf5;
 	color: #020817;
 }
@@ -217,7 +219,7 @@ body {
 
 	/* SHADCN OVERRIDES */
 	.select-field {
-		@apply w-full bg-grey-50 dark:bg-gray-700 h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
+		@apply w-full bg-grey-50 dark:bg-gray-700  h-[54px] placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent focus:ring-transparent !important;
 	}
 
 	.input-field {
@@ -237,7 +239,7 @@ body {
 	}
 
 	.select-item {
-		@apply py-3 cursor-pointer  focus:bg-primary-50;
+		@apply py-3 cursor-pointer  focus:bg-primary-50 focus:dark:bg-gray-800;
 	}
 
 	.toggle-switch {
@@ -287,7 +289,7 @@ body {
 
 /* ========================================== REACT-DATEPICKER STYLES */
 .datePicker {
-	width: 100%;
+	@apply w-full;
 }
 
 .react-datepicker__input-container input {
@@ -298,13 +300,40 @@ body {
 }
 
 .react-datepicker__day--selected {
-	background-color: #624cf5 !important;
+	background-color: hsl(169, 87%, 27%) !important;
 	color: #ffffff !important;
 	border-radius: 4px;
 }
 
 .react-datepicker__time-list-item--selected {
-	background-color: #624cf5 !important;
+	background-color: hsl(169, 87%, 27%) !important;
+}
+
+.react-datepicker__time-list::-webkit-scrollbar-track {
+	background-color: rgba(240, 240, 240);
+	border-radius: 0px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #aeaeaf;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #aeaeaf;
+}
+.react-datepicker__time-list::-webkit-scrollbar {
+	width: 14px;
+	border-radius: 0;
+}
+.react-datepicker__time-list::-webkit-scrollbar-thumb {
+	cursor: pointer;
+	background-color: #cccccc;
+	border: solid 2px transparent;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 3px;
+	border-right-width: 3px;
+	border-radius: 6px;
+	box-sizing: border-box;
+	background-clip: content-box;
 }
 
 .eventlify-text {
