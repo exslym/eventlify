@@ -18,12 +18,6 @@ const Header = () => {
 							ventlify
 						</h2>
 					</div>
-					{/* <div className='flex items-center justify-start gap-3'>
-						<Image src='/assets/images/logo.png' alt='logo' width={36} height={36} />
-						<h2 className='text-2xl font-semibold'>
-							<span className='text-4xl font-normal leading-[0.9]'>e</span>ventlify
-						</h2>
-					</div> */}
 				</Link>
 
 				<SignedIn>
@@ -32,14 +26,18 @@ const Header = () => {
 					</nav>
 				</SignedIn>
 
-				<div className='flex w-32 justify-end gap-3'>
+				<div className='flex justify-end items-center gap-5'>
 					<ThemeSwitcher />
 					<SignedIn>
 						<UserButton afterSignOutUrl='/' />
 						<MobileNav />
 					</SignedIn>
 					<SignedOut>
-						<Button asChild className='rounded-full' size='lg'>
+						<Button
+							asChild
+							className='rounded-full px-4 h-8 lg:h-9 lg:px-6 dark:text-white'
+							size='lg'
+						>
 							<Link href='/sign-in'>Login</Link>
 						</Button>
 					</SignedOut>

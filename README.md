@@ -1,6 +1,6 @@
 ## [Eventlify](https://eventlify-exs.vercel.app/)
 
-[![preview](https://github.com/exslym/eventlify/blob/main/public/preview.jpg)](https://eventlify-exs.vercel.app/)
+[![preview](https://github.com/exslym/eventlify/blob/main/public/preview2.jpg)](https://eventlify-exs.vercel.app/)
 
   <div>
     <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logoColor=white&logo=react&color=3178C6" alt="React" />

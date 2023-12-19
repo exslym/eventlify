@@ -17,11 +17,21 @@ export const ThemeSwitcher = () => {
 
 	return (
 		<>
-			<button
-				className={`absolute  xl:right-[80px] lg:right-[120px] right-[120px] flex justify-center items-center text-2xl mt-[2px] w-[30px] lg:w-[32px] h-[30px] lg:h-[32px] rounded-md hover:scale-[1.00] active:scale-100 duration-200 bg-slate-200 dark:bg-gray-700`}
+			{/* <button
+				className={`absolute  xl:right-[120px] lg:right-[160px] right-[120px] flex justify-center items-center text-2xl mt-[2px] w-[30px] lg:w-[32px] h-[30px] lg:h-[32px] rounded-md hover:scale-[1.00] active:scale-100 duration-200 bg-slate-200 dark:bg-gray-700`}
 				onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
 			>
 				{theme === 'light' ? <p>&#9214;</p> : <p className='pt-1'>&#9788;</p>}
+			</button> */}
+			<button
+				className={`flex shrink-0 justify-center items-center text-2xl w-8 lg:w-9 h-8 lg:h-9 rounded-full hover:scale-[1.00] active:scale-100 duration-200 bg-slate-200 dark:bg-white/70`}
+				onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+			>
+				{theme === 'light' ? (
+					<p>&#9214;</p>
+				) : (
+					<p className='pt-[3px] text-white leading-none'>&#9728;</p>
+				)}
 			</button>
 		</>
 	);

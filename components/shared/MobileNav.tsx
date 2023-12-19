@@ -7,14 +7,14 @@ import NavItems from './NavItems';
 
 const MobileNav = () => {
 	return (
-		<nav className='md:hidden ml-2  flex flex-col justify-center'>
+		<nav className='md:hidden flex flex-col justify-center w-8 lg:w-9 h-8 lg:h-9 rounded-full bg-slate-200 dark:bg-white/70'>
 			<Sheet>
-				<SheetTrigger className='align-middle'>
+				<SheetTrigger className='align-middle m-auto'>
 					<Image
 						src='/assets/icons/menu.svg'
 						alt='menu'
-						width={24}
-						height={24}
+						width={22}
+						height={22}
 						className='cursor-pointer'
 					/>
 				</SheetTrigger>

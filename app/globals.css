@@ -246,8 +246,20 @@ body {
 }
 
 /* ========================================== CLERK STYLES */
+.cl-userButtonBox {
+	@apply w-8 lg:w-9 h-8 lg:h-9;
+}
+
+.cl-userButtonTrigger {
+	@apply w-8 lg:w-9 h-8 lg:h-9;
+}
+
+.cl-avatarBox {
+	@apply w-full h-full;
+}
+
 .cl-logoImage {
-	height: 38px;
+	height: 36px;
 }
 
 .cl-userButtonBox {
