@@ -115,7 +115,7 @@ body {
 
 	/* 40 */
 	.h2-bold {
-		@apply font-bold text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
+		@apply font-bold text-[24px] md:text-[32px] leading-[40px] lg:text-[36px] lg:leading-[44px] xl:text-[40px] xl:leading-[48px];
 	}
 
 	.h2-medium {
@@ -221,7 +221,7 @@ body {
 	}
 
 	.input-field {
-		@apply bg-grey-50 dark:bg-gray-700 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 rounded-full p-regular-16 px-4 py-3 border-none focus-visible:ring-transparent !important;
+		@apply bg-grey-50 dark:bg-gray-700 h-[54px] focus-visible:ring-offset-0 placeholder:text-grey-500 rounded-full p-regular-16 px-5 py-3 border-none focus-visible:ring-transparent !important;
 	}
 
 	.input-price-field {
@@ -242,6 +242,10 @@ body {
 
 	.toggle-switch {
 		@apply bg-gray-300 !important;
+	}
+
+	.header-dark {
+		@apply dark:text-slate-300;
 	}
 }
 

@@ -17,16 +17,16 @@ const EventDetails = async ({ params: { id }, searchParams }: SearchParamProps) 
 	return (
 		<>
 			<section className='flex justify-center bg-primary-50 dark:bg-inherit bg-dotted-pattern bg-contain px-0 xl:px-6'>
-				<div className='grid grid-cols-1 md:grid-cols-2 2xl:max-w-7xl'>
+				<div className='wrapper grid grid-cols-1 lg:grid-cols-2 2xl:max-w-7xl'>
 					<Image
 						src={event.imageUrl}
 						alt='hero image'
 						width={1000}
 						height={1000}
-						className='h-full min-h-[300px] object-cover object-center'
+						className='lg:h-full lg:max-h-full md:max-h-[500px] max-h-[400px] min-h-[300px] object-cover object-center rounded-md'
 					/>
 
-					<div className='flex w-full flex-col gap-8 p-5 md:p-10'>
+					<div className='flex w-full flex-col gap-8 py-5 px-0 lg:p-10'>
 						<div className='flex flex-col gap-6'>
 							<h2 className='h2-bold'>{event.title}</h2>
 

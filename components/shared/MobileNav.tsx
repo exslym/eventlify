@@ -18,12 +18,12 @@ const MobileNav = () => {
 						className='cursor-pointer'
 					/>
 				</SheetTrigger>
-				<SheetContent className='flex flex-col gap-6 bg-white dark:bg-gray-800 dark:border-gray-800 md:hidden h-[320px] rounded-md'>
+				<SheetContent className='flex flex-col gap-2 bg-white dark:bg-gray-800 dark:border-gray-800 md:hidden h-[280px] rounded-md'>
 					<div className='flex items-center justify-start gap-3'>
 						<Image src='/assets/images/logo.png' alt='logo' width={36} height={36} />
 						<h2 className='text-2xl font-semibold'>Eventlify</h2>
 					</div>
-					<Separator className='border border-gray-50 dark:border-gray-600' />
+					<Separator className='mt-4 border border-gray-50 dark:border-gray-600' />
 					<NavItems />
 				</SheetContent>
 			</Sheet>
