@@ -29,8 +29,10 @@ const Header = () => {
 				<div className='flex justify-end items-center gap-5'>
 					<ThemeSwitcher />
 					<SignedIn>
-						<UserButton afterSignOutUrl='/' />
 						<MobileNav />
+						<div className='hidden md:flex'>
+							<UserButton afterSignOutUrl='/' />
+						</div>
 					</SignedIn>
 					<SignedOut>
 						<Button

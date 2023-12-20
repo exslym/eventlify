@@ -270,10 +270,11 @@ body {
 
 .cl-userButtonBox {
 	flex-direction: row-reverse;
+	width: auto;
 }
 
 .cl-userButtonOuterIdentifier {
-	font-size: 16px;
+	@apply text-lg dark:text-slate-300;
 }
 
 .cl-userButtonPopoverCard {

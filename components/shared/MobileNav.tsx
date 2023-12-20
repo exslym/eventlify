@@ -1,6 +1,7 @@
 import { Separator } from '@/components/ui/separator';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
+import { UserButton } from '@clerk/nextjs';
 import Image from 'next/image';
 import React from 'react';
 import NavItems from './NavItems';
@@ -13,16 +14,13 @@ const MobileNav = () => {
 					<Image
 						src='/assets/icons/menu.svg'
 						alt='menu'
-						width={22}
-						height={22}
+						width={18}
+						height={18}
 						className='cursor-pointer'
 					/>
 				</SheetTrigger>
-				<SheetContent className='flex flex-col gap-2 bg-white dark:bg-gray-800 dark:border-gray-800 md:hidden h-[280px] rounded-md'>
-					<div className='flex items-center justify-start gap-3'>
-						<Image src='/assets/images/logo.png' alt='logo' width={36} height={36} />
-						<h2 className='text-2xl font-semibold'>Eventlify</h2>
-					</div>
+				<SheetContent className='flex flex-col gap-2 bg-white dark:bg-gray-800 dark:border-gray-700 md:hidden h-[280px] max-w-max sm:max-w-max min-w-[250px] pr-12 rounded-md'>
+					<UserButton afterSignOutUrl='/' showName={true} />
 					<Separator className='mt-4 border border-gray-50 dark:border-gray-600' />
 					<NavItems />
 				</SheetContent>
